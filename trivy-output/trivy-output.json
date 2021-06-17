@@ -1,0 +1,611 @@
+[
+  {
+    "Target": "yarn.lock",
+    "Type": "yarn",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2021-23364",
+        "PkgName": "browserslist",
+        "InstalledVersion": "4.16.3",
+        "FixedVersion": "4.16.5",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23364",
+        "Title": "browserslist: parsing of invalid queries could result in Regular Expression Denial of Service (ReDoS)",
+        "Description": "The package browserslist from 4.0.0 and before 4.16.5 are vulnerable to Regular Expression Denial of Service (ReDoS) during parsing of queries.",
+        "Severity": "MEDIUM",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-w8qv-6jwh-64r5",
+          "https://github.com/browserslist/browserslist/blob/e82f32d1d4100d6bc79ea0b6b6a2d281a561e33c/index.js%23L472-L474",
+          "https://github.com/browserslist/browserslist/commit/c091916910dfe0b5fd61caad96083c6709b02d98",
+          "https://github.com/browserslist/browserslist/pull/593",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23364",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1277182",
+          "https://snyk.io/vuln/SNYK-JS-BROWSERSLIST-1090194"
+        ],
+        "PublishedDate": "2021-04-28T16:15:00Z",
+        "LastModifiedDate": "2021-05-05T20:15:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-wxhq-pm8v-cw75",
+        "PkgName": "clean-css",
+        "InstalledVersion": "3.4.28",
+        "FixedVersion": "4.1.11",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-wxhq-pm8v-cw75",
+        "Title": "Regular Expression Denial of Service in clean-css",
+        "Description": "Version of `clean-css` prior to 4.1.11 are vulnerable to Regular Expression Denial of Service (ReDoS). Untrusted input may cause catastrophic backtracking while matching regular expressions. This can cause the application to be unresponsive leading to Denial of Service.\n\n\n## Recommendation\n\nUpgrade to version 4.1.11 or higher.",
+        "Severity": "LOW",
+        "References": [
+          "https://github.com/advisories/GHSA-wxhq-pm8v-cw75",
+          "https://github.com/jakubpawlowicz/clean-css/commit/2929bafbf8cdf7dccb24e0949c70833764fa87e3"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28469",
+        "PkgName": "glob-parent",
+        "InstalledVersion": "3.1.0",
+        "FixedVersion": "5.1.2",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28469",
+        "Title": "nodejs-glob-parent: Regular expression denial of service",
+        "Description": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28469",
+          "https://github.com/advisories/GHSA-ww39-953v-wcq6",
+          "https://github.com/gulpjs/glob-parent/blob/6ce8d11f2f1ed8e80a9526b1dc8cf3aa71f43474/index.js%23L9",
+          "https://github.com/gulpjs/glob-parent/commit/f9231168b0041fea3f8f954b3cceb56269fc6366",
+          "https://github.com/gulpjs/glob-parent/pull/36",
+          "https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28469",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBES128-1059093",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1059092",
+          "https://snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905"
+        ],
+        "PublishedDate": "2021-06-03T16:15:00Z",
+        "LastModifiedDate": "2021-06-11T18:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28469",
+        "PkgName": "glob-parent",
+        "InstalledVersion": "5.1.1",
+        "FixedVersion": "5.1.2",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28469",
+        "Title": "nodejs-glob-parent: Regular expression denial of service",
+        "Description": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28469",
+          "https://github.com/advisories/GHSA-ww39-953v-wcq6",
+          "https://github.com/gulpjs/glob-parent/blob/6ce8d11f2f1ed8e80a9526b1dc8cf3aa71f43474/index.js%23L9",
+          "https://github.com/gulpjs/glob-parent/commit/f9231168b0041fea3f8f954b3cceb56269fc6366",
+          "https://github.com/gulpjs/glob-parent/pull/36",
+          "https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28469",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBES128-1059093",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1059092",
+          "https://snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905"
+        ],
+        "PublishedDate": "2021-06-03T16:15:00Z",
+        "LastModifiedDate": "2021-06-11T18:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23369",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.7.6",
+        "FixedVersion": "4.7.7",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23369",
+        "Title": "nodejs-handlebars: Remote code execution when compiling untrusted compile templates with strict:true option",
+        "Description": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source.",
+        "Severity": "CRITICAL",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23369",
+          "https://github.com/advisories/GHSA-f2jv-r9rf-7988",
+          "https://github.com/handlebars-lang/handlebars.js/commit/b6d3de7123eebba603e321f04afdbae608e8fea8",
+          "https://github.com/handlebars-lang/handlebars.js/commit/f0589701698268578199be25285b2ebea1c1e427",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23369",
+          "https://security.netapp.com/advisory/ntap-20210604-0008/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074950",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074951",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074952",
+          "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-1056767"
+        ],
+        "PublishedDate": "2021-04-12T14:15:00Z",
+        "LastModifiedDate": "2021-06-08T13:54:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23362",
+        "PkgName": "hosted-git-info",
+        "InstalledVersion": "2.8.8",
+        "FixedVersion": "2.8.9, 3.0.8",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23362",
+        "Title": "nodejs-hosted-git-info: Regular Expression denial of service via shortcutMatch in fromUrl()",
+        "Description": "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity.",
+        "Severity": "MEDIUM",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-43f8-2h32-f4cj",
+          "https://github.com/npm/hosted-git-info/commit/29adfe5ef789784c861b2cdeb15051ec2ba651a7",
+          "https://github.com/npm/hosted-git-info/commit/8d4b3697d79bcd89cdb36d1db165e3696c783a01",
+          "https://github.com/npm/hosted-git-info/commit/bede0dc38e1785e732bf0a48ba6f81a4a908eba3",
+          "https://github.com/npm/hosted-git-info/commits/v2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23362",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1088356",
+          "https://snyk.io/vuln/SNYK-JS-HOSTEDGITINFO-1088355"
+        ],
+        "PublishedDate": "2021-03-23T17:15:00Z",
+        "LastModifiedDate": "2021-06-08T19:30:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23337",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.20",
+        "FixedVersion": "4.17.21",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337",
+        "Title": "nodejs-lodash: command injection via template",
+        "Description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-77"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23337",
+          "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "https://github.com/lodash/lodash/blob/ddfd9b11a0126db2302cb70ec9973b66baec0975/lodash.js%23L14851",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+          "https://security.netapp.com/advisory/ntap-20210312-0006/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1040724"
+        ],
+        "PublishedDate": "2021-02-15T13:15:00Z",
+        "LastModifiedDate": "2021-03-26T02:42:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-ch52-vgq2-943f",
+        "PkgName": "marked",
+        "InstalledVersion": "0.6.3",
+        "FixedVersion": "0.7.0",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-ch52-vgq2-943f",
+        "Title": "Regular Expression Denial of Service in marked",
+        "Description": "Affected versions of `marked` are vulnerable to Regular Expression Denial of Service (ReDoS). The `_label` subrule may significantly degrade parsing performance of malformed input.\n\n\n## Recommendation\n\nUpgrade to version 0.7.0 or later.",
+        "Severity": "LOW",
+        "References": [
+          "https://github.com/advisories/GHSA-ch52-vgq2-943f",
+          "https://www.npmjs.com/advisories/1076"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-7fhm-mqm4-2wp7",
+        "PkgName": "minimist",
+        "InstalledVersion": "0.2.1",
+        "FixedVersion": "1.2.2",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7",
+        "Title": "Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)",
+        "Description": "**Withdrawn**\nGitHub has withdrawn this advisory in place of GHSA-vh95-rmgr-6w4m and GHSA-6chw-6frg-f759.\nThe reason for withdrawing is that some mistakes were made during the ingestion of CVE-2020-7598\nwhich caused this advisory to be published with incorrect information.\n\nIn order to provide accurate advisory information, new advisories were created:\n\n- minimist: https://github.com/advisories/GHSA-vh95-rmgr-6w4m\n- acorn: https://github.com/advisories/GHSA-6chw-6frg-f759",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-6chw-6frg-f759",
+          "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7789",
+        "PkgName": "node-notifier",
+        "InstalledVersion": "5.4.3",
+        "FixedVersion": "8.0.1",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7789",
+        "Title": "nodejs-node-notifier: command injection due to the options params not being sanitised when being passed an array",
+        "Description": "This affects the package node-notifier before 9.0.0. It allows an attacker to run arbitrary commands on Linux machines due to the options params not being sanitised when being passed an array.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-78"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-5fw9-fq32-wv5p",
+          "https://github.com/mikaelbr/node-notifier/blob/master/lib/utils.js%23L303",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7789",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1050371",
+          "https://snyk.io/vuln/SNYK-JS-NODENOTIFIER-1035794"
+        ],
+        "PublishedDate": "2020-12-11T10:15:00Z",
+        "LastModifiedDate": "2020-12-17T15:52:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23354",
+        "PkgName": "printf",
+        "InstalledVersion": "0.5.3",
+        "FixedVersion": "0.6.1",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23354",
+        "Title": "Regular Expression Denial of Service (ReDoS)",
+        "Description": "The package printf before 0.6.1 are vulnerable to Regular Expression Denial of Service (ReDoS) via the regex string /\\%(?:\\(([\\w_.]+)\\)|([1-9]\\d*)\\$)?([0 +\\-\\]*)(\\*|\\d+)?(\\.)?(\\*|\\d+)?[hlL]?([\\%bscdeEfFgGioOuxX])/g in lib/printf.js. The vulnerable regular expression has cubic worst-case time complexity.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://github.com/adaltas/node-printf/issues/31",
+          "https://github.com/adaltas/node-printf/pull/32",
+          "https://github.com/advisories/GHSA-xfhp-gmh8-r8v2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23354",
+          "https://snyk.io/vuln/SNYK-JS-PRINTF-1072096"
+        ],
+        "PublishedDate": "2021-03-12T15:15:00Z",
+        "LastModifiedDate": "2021-03-18T16:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-27290",
+        "PkgName": "ssri",
+        "InstalledVersion": "6.0.1",
+        "FixedVersion": "8.0.1, 7.1.1, 6.0.2",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-27290",
+        "Title": "nodejs-ssri: Regular expression DoS (ReDoS) when parsing malicious SRI in strict mode",
+        "Description": "ssri 5.2.2-8.0.0, fixed in 8.0.1, processes SRIs using a regular expression which is vulnerable to a denial of service. Malicious SRIs could take an extremely long time to process, leading to denial of service. This issue only affects consumers using the strict option.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4.3,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27290",
+          "https://doyensec.com/resources/Doyensec_Advisory_ssri_redos.pdf",
+          "https://github.com/advisories/GHSA-vx3p-948g-6vhq",
+          "https://github.com/yetingli/SaveResults/blob/main/pdf/ssri-redos.pdf",
+          "https://npmjs.com",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-27290"
+        ],
+        "PublishedDate": "2021-03-12T22:15:00Z",
+        "LastModifiedDate": "2021-04-09T13:27:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23358",
+        "PkgName": "underscore",
+        "InstalledVersion": "1.12.0",
+        "FixedVersion": "1.12.1",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23358",
+        "Title": "nodejs-underscore: Arbitrary code execution via the template function",
+        "Description": "The package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-94"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23358",
+          "https://github.com/advisories/GHSA-cf4h-3jhx-xvhq",
+          "https://github.com/jashkenas/underscore/blob/master/modules/template.js%23L71",
+          "https://lists.apache.org/thread.html/r5df90c46f7000c4aab246e947f62361ecfb849c5a553dcdb0ef545e1@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/r770f910653772317b117ab4472b0a32c266ee4abbafda28b8a6f9306@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/raae088abdfa4fbd84e1d19d7a7ffe52bf8e426b83e6599ea9a734dba@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/rbc84926bacd377503a3f5c37b923c1931f9d343754488d94e6f08039@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/re69ee408b3983b43e9c4a82a9a17cbbf8681bb91a4b61b46f365aeaf@%3Cissues.cordova.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2021/03/msg00038.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23358",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1081504",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBJASHKENAS-1081505",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1081503",
+          "https://snyk.io/vuln/SNYK-JS-UNDERSCORE-1080984",
+          "https://ubuntu.com/security/notices/USN-4913-1",
+          "https://ubuntu.com/security/notices/USN-4913-2",
+          "https://www.debian.org/security/2021/dsa-4883"
+        ],
+        "PublishedDate": "2021-03-29T14:15:00Z",
+        "LastModifiedDate": "2021-04-20T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-32640",
+        "PkgName": "ws",
+        "InstalledVersion": "7.4.2",
+        "FixedVersion": "5.2.3, 6.2.2, 7.4.6",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-32640",
+        "Title": "nodejs-ws: Specially crafted value of the `Sec-Websocket-Protocol` header can be used to significantly slow down a ws server",
+        "Description": "ws is an open source WebSocket client and server library for Node.js. A specially crafted value of the `Sec-Websocket-Protocol` header can be used to significantly slow down a ws server. The vulnerability has been fixed in ws@7.4.6 (https://github.com/websockets/ws/commit/00c425ec77993773d823f018f64a5c44e17023ff). In vulnerable versions of ws, the issue can be mitigated by reducing the maximum allowed length of the request headers using the [`--max-http-header-size=size`](https://nodejs.org/api/cli.html#cli_max_http_header_size_size) and/or the [`maxHeaderSize`](https://nodejs.org/api/http.html#http_http_createserver_options_requestlistener) options.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-6fc8-4gx4-v693",
+          "https://github.com/websockets/ws/commit/00c425ec77993773d823f018f64a5c44e17023ff",
+          "https://github.com/websockets/ws/security/advisories/GHSA-6fc8-4gx4-v693",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-32640"
+        ],
+        "PublishedDate": "2021-05-25T19:15:00Z",
+        "LastModifiedDate": "2021-06-02T16:50:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-21366",
+        "PkgName": "xmldom",
+        "InstalledVersion": "0.1.31",
+        "FixedVersion": "0.5.0",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-21366",
+        "Title": "Misinterpretation of malicious XML input",
+        "Description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. xmldom versions 0.4.0 and older do not correctly preserve system identifiers, FPIs or namespaces when repeatedly parsing and serializing maliciously crafted documents. This may lead to unexpected syntactic changes during XML processing in some downstream applications. This is fixed in version 0.5.0. As a workaround downstream applications can validate the input and reject the maliciously crafted documents.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-436"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+            "V2Score": 4.3,
+            "V3Score": 4.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21366",
+          "https://github.com/advisories/GHSA-h6q6-9hqw-rwfv",
+          "https://github.com/xmldom/xmldom/commit/d4201b9dfbf760049f457f9f08a3888d48835135",
+          "https://github.com/xmldom/xmldom/releases/tag/0.5.0",
+          "https://github.com/xmldom/xmldom/security/advisories/GHSA-h6q6-9hqw-rwfv",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-21366",
+          "https://www.npmjs.com/package/xmldom"
+        ],
+        "PublishedDate": "2021-03-12T17:15:00Z",
+        "LastModifiedDate": "2021-03-22T12:09:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-31597",
+        "PkgName": "xmlhttprequest-ssl",
+        "InstalledVersion": "1.5.5",
+        "FixedVersion": "1.6.1",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-31597",
+        "Title": "xmlhttprequest-ssl: SSL certificate validation disabled by default",
+        "Description": "The xmlhttprequest-ssl package before 1.6.1 for Node.js disables SSL certificate validation by default, because rejectUnauthorized (when the property exists but is undefined) is considered to be false within the https.request function of Node.js. In other words, no certificate is ever rejected.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-295"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+            "V2Score": 7.5,
+            "V3Score": 9.4
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+            "V3Score": 9.4
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-72mh-269x-7mh5",
+          "https://github.com/mjwwit/node-XMLHttpRequest/commit/bf53329b61ca6afc5d28f6b8d2dc2e3ca740a9b2",
+          "https://github.com/mjwwit/node-XMLHttpRequest/compare/v1.6.0...1.6.1",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-31597",
+          "https://people.kingsds.network/wesgarland/xmlhttprequest-ssl-vuln.txt"
+        ],
+        "PublishedDate": "2021-04-23T00:15:00Z",
+        "LastModifiedDate": "2021-05-19T15:00:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28502",
+        "PkgName": "xmlhttprequest-ssl",
+        "InstalledVersion": "1.5.5",
+        "FixedVersion": "1.6.2",
+        "Layer": {
+          "DiffID": "sha256:a3089d5b412302d9cf11b94bea749ba746eee8fa02ccea81f8f0a594ee800c21"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28502",
+        "Title": "nodejs-xmlhttprequest: Code injection through user input to xhr.send",
+        "Description": "This affects the package xmlhttprequest before 1.7.0; all versions of package xmlhttprequest-ssl. Provided requests are sent synchronously (async=False on xhr.open), malicious user input flowing into xhr.send could result in arbitrary code being injected and run.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-94"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.8,
+            "V3Score": 8.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 8.1
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28502",
+          "https://github.com/advisories/GHSA-h4j5-c7cj-74xg",
+          "https://github.com/driverdan/node-XMLHttpRequest/blob/1.6.0/lib/XMLHttpRequest.js%23L480",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28502",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1082937",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1082938",
+          "https://snyk.io/vuln/SNYK-JS-XMLHTTPREQUEST-1082935",
+          "https://snyk.io/vuln/SNYK-JS-XMLHTTPREQUESTSSL-1082936"
+        ],
+        "PublishedDate": "2021-03-05T18:15:00Z",
+        "LastModifiedDate": "2021-03-16T16:12:00Z"
+      }
+    ]
+  }
+]
